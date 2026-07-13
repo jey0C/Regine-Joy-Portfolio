@@ -1,0 +1,6 @@
+{
+  "name": "Regine Moises Portfolio",
+  "description": "A retro, romantic portfolio inspired by Sabrina Carpenter aesthetics, featuring lace motifs, script fonts, and a burgundy/pink color palette.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
