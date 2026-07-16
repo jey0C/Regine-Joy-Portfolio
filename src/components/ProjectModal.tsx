@@ -111,9 +111,16 @@ export default function ProjectModal({ project, onClose }) {
                 )}
               </div>
 
-              <button className="bg-[#301014] hover:bg-brand-burgundy text-white font-heading font-medium tracking-wide py-3 px-8 rounded-full transition-colors inline-block mt-auto self-start">
-                View this work
-              </button>
+              {project.externalLink && (
+                <a 
+                  href={project.externalLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-[#301014] hover:bg-brand-burgundy text-white font-heading font-medium tracking-wide py-3 px-8 rounded-full transition-colors inline-block mt-auto self-start"
+                >
+                  View this work
+                </a>
+              )}
             </div>
           </div>
         </motion.div>

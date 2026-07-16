@@ -5,20 +5,20 @@ export default function AboutPage() {
   const navigate = useNavigate();
 
   const services = [
-    { title: "Brand Identity", image: "/images/lips.png" },
-    { title: "Visual Design", image: "/images/eye.png" },
-    { title: "Video Ads", image: "/images/camera.png" },
+    { title: "Brand Identity", image: "/images/lips.png", description: "Logos, colour systems, typography, and brand guidelines that build lasting recognition." },
+    { title: "Visual Design", image: "/images/eye.png", description: "Posters, social media assets, and ad creatives that stop the scroll and tell your story." },
+    { title: "Video Ads", image: "/images/camera.png", description: "Short-form video content and ad sequences optimised for Instagram, TikTok, and beyond." },
   ];
 
   return (
     <div className="flex flex-col w-full bg-[#e8cdcf]">
       {/* First Section */}
-      <div className="pt-24 pb-12 w-full lg:h-[90vh] lg:min-h-[800px] lg:max-h-[1000px] flex items-center justify-center bg-[#f9e7e9] relative overflow-hidden shrink-0">
+      <div className="pt-24 pb-12 w-full min-h-[100vh] flex flex-col items-center justify-center bg-[#f9e7e9] relative overflow-hidden shrink-0">
         
         <div className="w-full max-w-[1500px] mx-auto px-6 lg:pl-12 lg:pr-0 flex flex-col lg:flex-row items-center justify-between relative z-10 gap-10">
           
-          {/* Left Side: Text and Tickets */}
-          <div className="flex flex-col items-center lg:items-start w-full lg:w-[45%] shrink-0 pt-10 lg:-ml-10 xl:-ml-20">
+          {/* Left Side: Text */}
+          <div className="flex flex-col items-center lg:items-start w-full lg:w-[45%] shrink-0 lg:-ml-10 xl:-ml-20 -mt-10 lg:-mt-20">
              
              <motion.div
                initial={{ opacity: 0, y: 20 }}
@@ -26,53 +26,21 @@ export default function AboutPage() {
                transition={{ duration: 0.8 }}
                className="text-center lg:text-left flex flex-col items-center w-full lg:items-start"
              >
-               <img src="/images/red logo.png" alt="Hey there! I'm Regine Moises" className="w-full max-w-[450px] lg:max-w-[700px] xl:max-w-[800px] h-auto object-contain" />
-             </motion.div>
-
-             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8, delay: 0.2 }}
-               className="mt-16 md:mt-24 lg:mt-32 flex flex-col items-center lg:items-start w-full lg:pl-12 xl:pl-24"
-             >
-               <h3 className="font-heading text-2xl md:text-3xl lg:text-4xl text-[#6b1b26] mb-8 font-medium">What I do</h3>
+               <img src="/images/red logo.png" alt="Hey there! I'm Regine Moises" className="w-full max-w-[450px] lg:max-w-[700px] xl:max-w-[800px] h-auto object-contain mb-8" />
                
-               {/* Tickets Row */}
-               <div className="flex flex-row justify-center items-center gap-4 md:gap-8 w-full max-w-3xl lg:justify-start">
-                 {services.map((service, index) => (
-                   <div key={service.title} className="relative w-[120px] md:w-[180px] lg:w-[200px] xl:w-[220px] aspect-[5/3]">
-                      {/* SVG Vintage Label Background */}
-                      <svg 
-                        className="absolute inset-0 w-full h-full pointer-events-none drop-shadow-[0_10px_20px_rgba(107,27,38,0.25)]" 
-                        preserveAspectRatio="none" 
-                        viewBox="0 0 300 180" 
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <defs>
-                          <path id={`ticket-base-front-${index}`} d="M -125 -90 L 125 -90 A 25 25 0 0 0 150 -65 Q 158 0 150 65 A 25 25 0 0 0 125 90 L -125 90 A 25 25 0 0 0 -150 65 Q -158 0 -150 -65 A 25 25 0 0 0 -125 -90 Z" />
-                          <path id={`ticket-thick-border-front-${index}`} d="M -120.4 -85 L 120.4 -85 A 30 30 0 0 0 145 -60.4 Q 153 0 145 60.4 A 30 30 0 0 0 120.4 85 L -120.4 85 A 30 30 0 0 0 -145 60.4 Q -153 0 -145 -60.4 A 30 30 0 0 0 -120.4 -85 Z" />
-                          <path id={`ticket-thin-border-front-${index}`} d="M -115 -78 L 115 -78 A 37 37 0 0 0 138 -55 Q 146 0 138 55 A 37 37 0 0 0 115 78 L -115 78 A 37 37 0 0 0 -138 55 Q -146 0 -138 -55 A 37 37 0 0 0 -115 -78 Z" />
-                        </defs>
-                        <g transform="translate(150 90)">
-                          <use href={`#ticket-base-front-${index}`} fill="#f8f4ef" />
-                          <use href={`#ticket-thick-border-front-${index}`} fill="none" stroke="#6b1b26" strokeWidth="4" vectorEffect="non-scaling-stroke" />
-                          <use href={`#ticket-thin-border-front-${index}`} fill="none" stroke="#6b1b26" strokeWidth="1" vectorEffect="non-scaling-stroke" />
-                        </g>
-                      </svg>
-                      
-                      {/* Foreground Content */}
-                      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center p-2">
-                         <img 
-                           src={service.image} 
-                           alt={service.title} 
-                           className="h-[40%] w-auto object-contain mix-blend-multiply opacity-[0.85] saturate-[0.8] contrast-[1.2] drop-shadow-[0_4px_8px_rgba(107,27,38,0.25)]" 
-                         />
-                         <h3 className="font-heading font-medium text-[10px] md:text-sm lg:text-base tracking-wide text-[#6b1b26] leading-tight mt-1 md:mt-2 text-center whitespace-nowrap">
-                           {service.title}
-                         </h3>
-                      </div>
-                   </div>
-                 ))}
+               <div className="w-full max-w-[450px] lg:max-w-[700px] xl:max-w-[800px] flex flex-col gap-6 text-[#2b0402] text-sm md:text-base lg:text-lg leading-relaxed px-4 lg:px-0">
+                 <p className="italic font-medium">
+                   A marketing enthusiast passionate about helping brands communicate their ideas clearly and creatively.
+                 </p>
+                 <p>
+                   I specialize in brand design and marketing asset creation, from presentation decks and posters to digital visuals that help brands tell meaningful stories and connect with their audiences. Through academic projects and hands-on creative work, I've developed strong skills in marketing strategy, creative conceptualization, storyboarding, and visual content creation, with a focus on turning ideas into campaigns that strengthen brand identity and capture attention.
+                 </p>
+                 <p>
+                   I'm always excited to collaborate with businesses, teams, and organizations looking to grow their brand presence through thoughtful, creative marketing. If you're looking for someone who can bring your marketing ideas to life through strong visuals and storytelling, I'd love to connect.
+                 </p>
+                 <p>
+                   When I'm not designing, you'll find me singing a little too loudly, dancing around my room, or rewatching a film. I love a good movie or series, dogs and cats, crafting random things, and trying new food whenever I can.
+                 </p>
                </div>
              </motion.div>
           </div>
@@ -88,12 +56,14 @@ export default function AboutPage() {
                 <img 
                   src="/images/passport.png" 
                   alt="Regine Moises Passport" 
-                  className="w-[500px] lg:w-[650px] xl:w-[750px] max-w-none h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)]" 
+                  className="w-[500px] lg:w-[650px] xl:w-[750px] max-w-none h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] transition-all duration-500 cursor-pointer" 
                 />
              </motion.div>
           </div>
 
         </div>
+
+        {/* Tickets Row Removed */}
       </div>
 
       {/* Second Section: Book */}
@@ -157,7 +127,7 @@ export default function AboutPage() {
         <div className="relative w-full max-w-[1400px] mx-auto px-6 lg:px-12 h-full flex flex-col md:flex-row items-center justify-between z-10 -translate-x-5 md:-translate-x-10 lg:-translate-x-16 xl:-translate-x-24">
           
           {/* Left Text */}
-          <div className="flex flex-col text-[#6b1b26] z-30 drop-shadow-sm md:w-[45%] mt-10 md:-mt-20 xl:pl-20 translate-x-5 md:translate-x-10 lg:translate-x-16">
+          <div className="flex flex-col text-[#6b1b26] z-30 drop-shadow-sm md:w-[45%] xl:pl-20 translate-x-5 md:translate-x-10 lg:translate-x-16 -mt-32 md:-mt-48 lg:-mt-64">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -202,27 +172,50 @@ export default function AboutPage() {
               />
               
              {/* Coffee */}
-             <motion.img 
+             <motion.div 
                 initial={{ opacity: 0, y: -50, rotate: -10 }}
                 whileInView={{ opacity: 1, y: 0, rotate: 10 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                src="/images/coffee.png" 
-                className="absolute top-0 right-0 md:-top-10 md:-right-20 lg:-right-40 xl:-right-56 w-40 md:w-64 object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] z-30" 
-                alt="Iced Coffee" 
-              />
+                className="absolute top-0 right-0 md:-top-10 md:-right-20 lg:-right-40 xl:-right-56 w-40 md:w-64 z-30 group cursor-pointer" 
+              >
+                <img 
+                  src="/images/coffee.png" 
+                  className="w-full h-auto object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)] transition-transform duration-300 group-hover:scale-105" 
+                  alt="Iced Coffee" 
+                />
+                
+                {/* Popout Text */}
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-2xl shadow-xl border border-[#f9e7e9] opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 pointer-events-none whitespace-nowrap z-40" style={{ transform: "translate(-50%, 0) rotate(-10deg)" }}>
+                  <p className="font-sans text-sm md:text-base font-medium text-[#6b1b26]">
+                    1 Caramel Macchiato for Regine
+                  </p>
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white/95 border-b border-r border-[#f9e7e9] transform rotate-45"></div>
+                </div>
+              </motion.div>
 
              {/* iPod */}
-             <motion.img 
+             <motion.div 
                 initial={{ opacity: 0, x: -50, rotate: 10 }}
                 whileInView={{ opacity: 1, x: 0, rotate: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                src="/images/ipod.png" 
-                className="absolute -bottom-5 -left-5 md:bottom-0 md:-left-[250px] lg:-left-[400px] xl:-left-[480px] w-32 md:w-48 object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.15)] z-30 cursor-pointer hover:scale-105 transition-transform" 
-                alt="iPod" 
+                className="absolute -bottom-5 -left-5 md:bottom-0 md:-left-[250px] lg:-left-[400px] xl:-left-[480px] z-30 cursor-pointer group flex items-center gap-2 md:gap-4"
                 onClick={() => navigate('/playlist')}
-              />
+              >
+                <img
+                  src="/images/ipod.png" 
+                  className="w-32 md:w-48 object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform" 
+                  alt="iPod" 
+                />
+                
+                <div className="hidden sm:block font-sans text-sm md:text-base lg:text-lg font-medium text-[#6b1b26] italic max-w-[150px] md:max-w-[180px] drop-shadow-sm -ml-4 mt-20 lg:mt-32" style={{ transform: "rotate(-5deg)" }}>
+                  <div className="translate-y-16 md:translate-y-20 lg:translate-y-28 translate-x-3 md:translate-x-4 lg:translate-x-6">
+                    "Tap the iPod, my playlist says a lot about me"
+                  </div>
+                  <svg className="w-6 h-6 md:w-8 md:h-8 absolute -bottom-6 -left-4 text-[#6b1b26] opacity-60 transform -scale-x-100 rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path></svg>
+                </div>
+              </motion.div>
 
              {/* Liptint */}
              <motion.img 

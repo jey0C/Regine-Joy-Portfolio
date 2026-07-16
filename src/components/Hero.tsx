@@ -13,28 +13,33 @@ export default function Hero() {
         }}
       />
       
-      <div className="container mx-auto px-8 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 w-full">
+      <div className="container mx-auto px-8 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center relative z-10 w-full">
         {/* Left Content */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          className="text-brand-cream max-w-2xl"
+          className="text-brand-cream max-w-2xl lg:-ml-16 xl:-ml-32"
         >
           <h2 className="font-heading text-3xl md:text-4xl mb-2 opacity-90 ml-2 md:ml-6">
             Hey there<span className="font-body">!</span> I am
           </h2>
-          <div className="mb-8 relative w-full max-w-[22rem] sm:max-w-md md:max-w-lg lg:max-w-[600px] drop-shadow-lg -ml-2 md:-ml-4">
+          <div className="mb-8 relative w-full max-w-[24.2rem] sm:max-w-[495px] md:max-w-[563px] lg:max-w-[660px] drop-shadow-lg">
             <img 
               src="/images/primary logo.png?v=3" 
               alt="Regine Moises" 
-              className="w-full h-auto scale-110 origin-left"
+              className="w-full h-auto"
             />
           </div>
           
-          <p className="font-body font-light text-lg md:text-xl leading-relaxed text-brand-cream/80 max-w-md">
-            I create visual identities, campaigns and digital assets that help brands communicate their story with clarity, warmth, and beauty.
-          </p>
+          <div className="font-body font-light text-base md:text-lg leading-relaxed text-brand-cream/90 max-w-[24.2rem] sm:max-w-[495px] md:max-w-[563px] lg:max-w-[660px] mb-6">
+            <p className="italic mb-4 font-bold text-[15px] sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl whitespace-nowrap text-brand-pink/90">
+              I turn brands into something people can't help but notice.
+            </p>
+            <p className="opacity-90">
+              Think of me as your go-to girl for scroll-stopping visuals from logo design and brand collateral to posters, digital graphics, and video advertisements. I create work that's polished, purposeful, and unmistakably on-brand.
+            </p>
+          </div>
           
           <div className="mt-10 flex flex-wrap gap-4 font-body">
             <Link 

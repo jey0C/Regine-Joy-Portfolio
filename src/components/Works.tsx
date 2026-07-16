@@ -45,8 +45,8 @@ export default function Works() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 relative z-10">
           <div>
-            <h2 className="font-title text-6xl text-brand-pink mb-2">Selected Works</h2>
-            <p className="font-subheading italic font-light text-xl opacity-80">A glimpse into my creative world.</p>
+            <h2 className="font-title text-[2.5rem] md:text-5xl lg:text-6xl text-brand-pink mb-4 leading-tight">Things I've Loved Making</h2>
+            <p className="font-subheading italic font-light text-lg md:text-xl opacity-90 max-w-2xl">A little showcase of the designs I've enjoyed creating, from presentations to social media assets, and so much more</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex gap-2">

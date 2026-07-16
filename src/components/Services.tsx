@@ -110,16 +110,16 @@ export default function Services() {
                   </svg>
                   
                   {/* Foreground Content */}
-                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
+                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4 text-center">
                      {/* Vintage texture overlay over the card (optional) */}
                      <div className="absolute inset-0 bg-brand-burgundy/5 opacity-40 mix-blend-multiply pointer-events-none rounded-[20px]" />
                      
                      <img 
                        src={service.image} 
                        alt={service.title} 
-                       className="h-[40%] sm:h-[45%] md:h-[50%] w-auto object-contain mix-blend-multiply opacity-[0.85] saturate-[0.8] contrast-[1.2] drop-shadow-[0_4px_8px_rgba(107,27,38,0.25)]" 
+                       className="h-[35%] sm:h-[40%] md:h-[45%] w-auto object-contain mix-blend-multiply opacity-[0.85] saturate-[0.8] contrast-[1.2] drop-shadow-[0_4px_8px_rgba(107,27,38,0.25)]" 
                      />
-                     <h3 className="font-heading text-base sm:text-lg md:text-[20px] lg:text-[22px] tracking-wide text-brand-burgundy leading-tight mt-1 sm:mt-2">
+                     <h3 className="font-heading text-[1.15rem] sm:text-2xl md:text-[26px] lg:text-[28px] tracking-wide text-[#2b0402] leading-tight mt-1 sm:mt-2">
                        {service.title}
                      </h3>
                   </div>
@@ -147,9 +147,9 @@ export default function Services() {
                   </svg>
                   
                   {/* Foreground Content */}
-                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-10 sm:px-12 md:px-14 py-6 sm:py-8 text-center text-[#6b1b26]">
-                     <div className="absolute inset-0 bg-brand-burgundy/5 opacity-40 mix-blend-multiply pointer-events-none rounded-[20px]" />
-                     <p className="font-sans text-[11px] sm:text-xs md:text-[13px] leading-relaxed opacity-90">
+                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-8 sm:px-10 md:px-12 py-4 sm:py-6 text-center text-[#2b0402]">
+                     <div className="absolute inset-0 bg-[#2b0402]/5 opacity-40 mix-blend-multiply pointer-events-none rounded-[20px]" />
+                     <p className="font-sans text-[13px] sm:text-[15px] md:text-base leading-snug sm:leading-relaxed opacity-90 font-medium line-clamp-4">
                        {service.description}
                      </p>
                   </div>

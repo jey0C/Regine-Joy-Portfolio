@@ -70,14 +70,14 @@ export default function ContactPage() {
                    <div className="mt-14 flex flex-col items-center">
                      <p className="font-comodo text-[#6b1b26] tracking-widest text-sm mb-4 uppercase font-bold">Let's Connect</p>
                      <div className="flex gap-5 text-[#6b1b26]">
-                       <a href="#" className="hover:opacity-75 transition-opacity">
+                       <a href="https://www.linkedin.com/in/regine-moises-3633412a1/" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">
                          {/* Using custom square design for Linkedin to match the reference */}
                          <div className="w-8 h-8 rounded text-white bg-[#6b1b26] flex items-center justify-center"><Linkedin className="w-5 h-5 fill-current" /></div>
                        </a>
-                       <a href="#" className="hover:opacity-75 transition-opacity">
+                       <a href="https://www.facebook.com/regina.moises.98" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">
                          <div className="w-8 h-8 rounded-full text-white bg-[#6b1b26] flex items-center justify-center"><Facebook className="w-5 h-5 fill-current border-none" /></div>
                        </a>
-                       <a href="#" className="hover:opacity-75 transition-opacity text-[#6b1b26]">
+                       <a href="https://www.instagram.com/its.me.joy28/" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity text-[#6b1b26]">
                          <Instagram className="w-9 h-9 border-2 border-transparent p-0.5" strokeWidth={2.5} />
                        </a>
                      </div>
@@ -90,11 +90,28 @@ export default function ContactPage() {
                 {/* Right Side: Form */}
                 <div className="flex flex-col mt-4 md:pl-6 text-[#6b1b26]">
                   <h3 className="font-heading text-lg mb-4">Address</h3>
-                  <form className="space-y-6 font-subheading" onSubmit={(e) => {
+                  <form className="space-y-6 font-subheading" onSubmit={async (e) => {
                     e.preventDefault();
                     if (isFormValid) {
-                      alert("Message Sent!");
-                      setFormData({ name: '', email: '', message: '' });
+                      try {
+                        const response = await fetch('/api/contact', {
+                          method: 'POST',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(formData),
+                        });
+                        
+                        if (response.ok) {
+                          alert("Message Sent!");
+                          setFormData({ name: '', email: '', message: '' });
+                        } else {
+                          alert("Failed to send message. Please try again later.");
+                        }
+                      } catch (error) {
+                        console.error("Error submitting form:", error);
+                        alert("An error occurred. Please try again later.");
+                      }
                     }
                   }}>
                     <div>

@@ -32,9 +32,9 @@ export default function Footer() {
           <div>
             <h4 className="text-brand-pink mb-4 text-xl">Socials</h4>
             <ul className="space-y-2 opacity-80 font-normal font-light">
-              <li><a href="#" className="hover:text-brand-pink hover:underline transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-brand-pink hover:underline transition-colors">Behance</a></li>
-              <li><a href="#" className="hover:text-brand-pink hover:underline transition-colors">Pinterest</a></li>
+              <li><a href="https://www.facebook.com/regina.moises.98" target="_blank" rel="noopener noreferrer" className="hover:text-brand-pink hover:underline transition-colors">Facebook</a></li>
+              <li><a href="https://www.instagram.com/its.me.joy28/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-pink hover:underline transition-colors">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/regine-moises-3633412a1/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-pink hover:underline transition-colors">LinkedIn</a></li>
             </ul>
           </div>
           <div>

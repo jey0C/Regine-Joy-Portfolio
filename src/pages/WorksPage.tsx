@@ -17,7 +17,8 @@ export default function WorksPage() {
       category: 'Social Media Assets', 
       image: '/works/thumbnails/bmap-1.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A cohesive set of social media graphics designed to boost online engagement and brand visibility for BMAP, featuring dynamic layouts and bold typography.',
+      externalLink: 'https://www.canva.com/design/DAHPKOPNZNQ/9XsrNA6fNJ8KT-7GmGHqBg/view?utm_content=DAHPKOPNZNQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hffdf40b191',
+      description: 'This project introduces BMAP\'s A.Y. 2025-2026 Officers through a nostalgic yearbook-style concept, blending polaroid photo cutouts with a scrapbook aesthetic. Each officer is presented in an individual polaroid frame with playful, hand-drawn doodles (stars, hearts, swirls) surrounding their photo, paired with their name and designated role — creating a personal, candid feel that highlights each leader\'s personality alongside their position.\nThe cover page anchors the set with a deep blue textured background and the "BMAP" wordmark rendered in a bold, layered cutout-letter style, alongside "A.Y 2025-2026 Officers" in a mix of clean and script typography. The overall design captures a sense of camaraderie and school-spirit nostalgia, making the officer introduction feel warm and community-driven rather than formal fitting for an org that values connection among its members.',
       popoutImages: [
         '/works/popouts/Bmap-sm/113.png',
         '/works/popouts/Bmap-sm/114.png',
@@ -25,11 +26,12 @@ export default function WorksPage() {
     },
     { 
       id: 24, 
-      title: 'Komersyolym', 
+      title: 'Komersyolympics', 
       category: 'Social Media Assets', 
       image: '/works/thumbnails/komersyolym.png', 
       aspectRatio: 'aspect-video', 
-      description: 'Vibrant promotional materials for Komersyolym, tailored for social media platforms to drive event awareness and participant registration.',
+      externalLink: 'https://drive.google.com/drive/folders/15NjSruSOj72OF2BdO_hbCOKY5EHEPK1d?usp=sharing',
+      description: 'A bold, arena-inspired visual identity for "COC Day Pamana," a multi-event community competition themed around sports, strategy, and talent. The campaign includes a main key visual and a carousel highlighting six event categories (Basketball, Volleyball, Badminton, eSports, Chess, Speed Cubing), unified through a consistent navy-red-yellow palette, collage-style layouts, and a stadium-graphic wordmark treatment.',
       popoutImages: [
         '/works/popouts/Komersyolym/117.png',
         '/works/popouts/Komersyolym/118.png',
@@ -41,7 +43,8 @@ export default function WorksPage() {
       category: 'Social Media Assets', 
       image: '/works/thumbnails/mpowered-sm.png', 
       aspectRatio: 'aspect-video', 
-      description: 'Strategic social media content for Mpowered, crafted to communicate empowering messages through clean, impactful visual design.',
+      externalLink: 'https://canva.link/rnhs3x1qd9fbcxm',
+      description: 'A cohesive teal-and-gold visual identity created for "M-Powered," a seminar themed "Empowering Marketers with Real Estate Strategies & AI Innovations for the Future." The campaign includes a logo mark, countdown/hype posts, a digital invitation, and a speaker announcement graphic , all unified through a consistent emerald-gold palette, elegant typography, and skyline motifs that reflect the real estate theme.',
       popoutImages: [
         '/works/popouts/Mpowered-sm/127.png',
         '/works/popouts/Mpowered-sm/128.png',
@@ -54,7 +57,8 @@ export default function WorksPage() {
       category: 'Social Media Assets', 
       image: '/works/thumbnails/sunlife-sm.png', 
       aspectRatio: 'aspect-video', 
-      description: 'Engaging digital assets for Sunlife, focusing on financial literacy and brand trust through approachable and professional aesthetics.',
+      externalLink: 'https://drive.google.com/drive/folders/10syooEey1IZvt8Kv9MbFyI_PFXyUyYBm?usp=sharing',
+      description: 'A monthly recognition graphic series designed for Sun Life financial advisors, celebrating top performers across categories like Top Advisor, Agency Credits, and Lives. Each edition features a premium gold-and-navy aesthetic with elegant serif typography and ribbon/banner accents, alongside a bolder blue-and-gold alternate style giving the brand a flexible but recognizable system for recurring monthly content.',
       popoutImages: [
         '/works/popouts/Sunlife-sm/121.png',
         '/works/popouts/Sunlife-sm/122.png',
@@ -68,21 +72,24 @@ export default function WorksPage() {
       category: 'Social Media Assets', 
       image: '/works/thumbnails/uptown-puff.png', 
       aspectRatio: 'aspect-video', 
-      description: 'Eye-catching and trendy social media visuals for Uptown Puff, highlighting product appeal with a modern and stylish flair.',
+      externalLink: 'https://drive.google.com/drive/folders/1WjsSo88p3TB2pB8yJ7wNAqRIzLXlLNkt?usp=sharing',
+      description: 'A vibrant flavor-forward advertising series for Uptown Puffs disposable vapes, featuring a bold main banner ("We Don\'t Smoke, We Puff Clouds") paired with individual product posts for each flavor variant such as Mixed Berries, Bubble Gum, Lemon Cola, and Strawberry Ice Cream. Each graphic uses flavor-matched color grading and fruit/ingredient imagery to make each variant instantly recognizable, while maintaining a consistent smoky, moody brand aesthetic across the series.',
       popoutImages: [
         '/works/popouts/Uptown-Puff/132.png',
         '/works/popouts/Uptown-Puff/133.png',
         '/works/popouts/Uptown-Puff/134.png',
       ]
     },
-    { id: 22, title: 'BMAP Shirt', category: 'TShirt', image: '/works/thumbnails/bmap-shirt.png', aspectRatio: 'aspect-video', description: "Custom apparel design for BMAP, translating the brand's identity into a wearable piece that resonates with the community." },
+    { id: 22, title: 'BMAP Shirt', category: 'TShirt', image: '/works/thumbnails/bmap-shirt.png', aspectRatio: 'aspect-video', externalLink: 'https://drive.google.com/file/d/1nW_AbyipCZQw111Fza9N00vwAGNoPTLZ/view?usp=sharing',
+      description: "This project is a BMAP merch design featuring a minimalist, streetwear-inspired oversized tee that integrates BMAP's brand colors of blue and red. The front showcases a subtle chest placement with the organization's hand-drawn flower emblem and \"BMAP\" wordmark, while the back features a bold spiral typography design repeating \"Business Management Association of the Philippines\" in the brand's signature blue, converging toward the same red flower mark at its center.\nThe design balances professionalism with approachability using clean blue typography to reflect trust and academic identity, while the organic, hand-drawn lettering style and spiral motif symbolize unity, growth, and the association's continuous cycle of mentorship and leadership. The piece serves as a wearable brand identity for members and events, reinforcing recall through consistent color use and minimalist detailing." },
     { 
       id: 19, 
       title: 'Kumon', 
       category: 'Video Commercials', 
       image: '/works/thumbnails/kumon.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A compelling video commercial for Kumon, showcasing the joy of learning and academic excellence through dynamic storytelling.',
+      externalLink: 'https://www.facebook.com/jeheyms.argel/videos/adfest20-3rd-place-best-tv-ad-3rd-place-best-director3rd-place-best-taglineon-be/1761365211469371/',
+      description: 'The Kumon advertisement highlights the journey of a child learning through Kumon’s globally trusted education method. The concept follows a child’s growth from learning basic shapes and numbers to building foundational math skills, emphasizing that meaningful progress comes from small, consistent steps.\n\nI developed the creative concept and storyboard for the advertisement and supported the production and execution of the campaign. The story focuses on how patience, guidance, and continuous practice help children grow not only academically but also in confidence. Through Kumon’s step-by-step learning approach, the campaign reinforces the message that strong foundations lead to bigger opportunities in the future because “Where Big Dreams Begin” starts with small steps.\n\nThe campaign was recognized at Adfest 2025, receiving 3rd Place Best Video Advertisement and 3rd Place Best Tagline.',
       popoutImages: [
         '/works/popouts/Kumon/98.png',
         '/works/popouts/Kumon/99.png',
@@ -95,7 +102,8 @@ export default function WorksPage() {
       category: 'Video Commercials', 
       image: '/works/thumbnails/rex-x-schoology.png', 
       aspectRatio: 'aspect-video', 
-      description: 'An informative and engaging video advertisement highlighting the partnership between Rex and Schoology, emphasizing seamless educational solutions.',
+      externalLink: 'https://drive.google.com/file/d/1qQptiCfzXVvq4QO9R8FI1iMeINWghWSt/view?usp=sharing',
+      description: 'This advertisement campaign highlights the everyday challenges and triumphs students face throughout their academic journey, capturing real, relatable moments of struggle and growth. The campaign showcases how Rex Higher Education supports students through these experiences, providing the resources, guidance, and encouragement they need to succeed.\n\nI served as the director for this project, leading the creative direction from concept to execution. My contributions included developing the creative concept, storyboarding the narrative, and overseeing the overall conceptualization of the campaign, ensuring the final message was relatable, engaging, and inspiring for the student audience.\n\nThis project reflects my ability to lead a creative vision from the ground up, combining storytelling, visual planning, and direction to bring a brand\'s message to life.',
       popoutImages: [
         '/works/popouts/Rex-X-Schoology/103.png',
         '/works/popouts/Rex-X-Schoology/104.png',
@@ -108,7 +116,8 @@ export default function WorksPage() {
       category: 'Video Commercials', 
       image: '/works/thumbnails/iloilo-supermart.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A vibrant commercial for Iloilo Supermart, capturing the essence of local community shopping with lively visuals and a welcoming tone.',
+      externalLink: 'https://www.facebook.com/iloilosupermart/videos/to-the-one-who-has-always-been-there-thank-you-mom-for-your-endless-love-guidanc/1403423417516387/',
+      description: 'This video advertisement is inspired by a simple memory from my childhood going grocery shopping with my mom. What once felt like a routine errand became one of the small moments that shaped how I see care, responsibility, and family.\n\nI directed and developed the creative concept and storyboard for the campaign, which served as a tribute to these unnoticed moments of love and responsibility and contributed to the team’s 1st Place win at the Council of Management Educators and Professionals in the Philippines, Inc. 29th Visayas Conference Video Advertisement Competition.',
       popoutImages: [
         '/works/popouts/Iloilo-Supermart/93.png',
         '/works/popouts/Iloilo-Supermart/94.png',
@@ -121,7 +130,8 @@ export default function WorksPage() {
       category: 'Stickers', 
       image: '/works/thumbnails/BMAP.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A collection of fun, brand-centric stickers for BMAP, perfect for physical and digital expression, enhancing community connection.',
+      externalLink: 'https://drive.google.com/drive/folders/1ZCH2xBbKqfReHVliMRRVe_79WNjidcsM?usp=sharing',
+      description: 'The BMAP Sticker Pack is a custom merchandising project distributed as a welcoming giveaway during the College of Business orientation. Featuring milestones ranging from freshman year to senior year, the stickers are designed to accompany business and marketing students throughout their entire college journey, using a mix of official branding, motivational slogans, and relatable student humor to foster long-term school pride.',
       popoutImages: [
         '/works/popouts/Bmap-Sticker/86.png',
         '/works/popouts/Bmap-Sticker/87.png',
@@ -135,7 +145,8 @@ export default function WorksPage() {
       category: 'Posters', 
       image: '/works/thumbnails/iloilo-360.png', 
       aspectRatio: 'aspect-video', 
-      description: 'An immersive poster design for Iloilo 360, utilizing striking imagery to showcase the rich culture and destinations of the region.',
+      externalLink: 'https://drive.google.com/drive/folders/1C95ZR9hXJsSg93flrBDJIzDLsr_WQS8n?usp=sharing',
+      description: 'The Iloilo 360 Video Booth Flyer Suite is a cohesive marketing catalog showcasing five distinct event activation and photo booth packages. By balancing a sleek, dark canvas with bold, package-specific color coding (orange, teal, gold, magenta, and red) and retro wavy borders, the design establishes high visual hierarchy. The layout pairs action-packed event samples with crystal-clear rate sheets and localized contact channels, providing an efficient, highly professional booking tool for potential clients.',
       popoutImages: [
         '/works/popouts/Iloilo360/71.png',
         '/works/popouts/Iloilo360/72.png',
@@ -151,7 +162,8 @@ export default function WorksPage() {
       category: 'Posters', 
       image: '/works/thumbnails/jump-n-slide.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A playful and energetic poster for Jump n Slide, designed to attract families and kids with bright colors and exciting graphics.',
+      externalLink: 'https://drive.google.com/drive/folders/1vuQasJTRLCQE-ukjnlgWx8obAzCPKIxu?usp=sharing',
+      description: 'The Jump-n-Slide Playground Catalog Suite is a vibrant, two-tier marketing and rate sheet design created for a mobile inflatable playground rental business in Iloilo. Separating inventory into Basic and Premium categories, the layout utilizes an easy-to-read grid system to detail pricing, sizing, and capacities. By wrapping essential logistical data in a cheerful sky-blue and yellow aesthetic, and highlighting standard freebies with clean product photography, the flyers serve as a clear, highly effective booking conversion tool for parents and event organizers.',
       popoutImages: [
         '/works/popouts/Jump-N-Slide/79.png',
         '/works/popouts/Jump-N-Slide/80.png',
@@ -165,7 +177,8 @@ export default function WorksPage() {
       category: 'Posters', 
       image: '/works/thumbnails/kalan.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A visually rich poster for Kalan, celebrating culinary heritage through warm tones and appetizing visual compositions.',
+      externalLink: 'https://canva.link/kalanphmenu2026',
+      description: 'The Kalan.PH Menu Design is a comprehensive visual layout created for a homegrown burger and chicken sandwich restaurant in Jaro, Iloilo City. Utilizing a clean cream background accented by bold black typography and energetic pops of yellow, the menu successfully organizes a diverse selection of comfort food, specialty lattes, and desserts. By pairing a structured, easy-to-read layout with high-quality, vibrant food photography, the final design creates a professional and highly appetizing brand experience for local diners.',
       popoutImages: [
         '/works/popouts/Kalan/62.png',
         '/works/popouts/Kalan/63.png',
@@ -182,7 +195,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/catch.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A comprehensive presentation deck analyzing fish price monitoring, employing clear data visualization and a cohesive nautical theme.',
+      externalLink: 'https://canva.link/ii59j786jppq3r3',
+      description: 'This data-driven research project tracks, compares, and analyzes the retail pricing of fresh and frozen fish across major supermarket chains over a defined observation period. By gathering real-time pricing data and normalizing it into standard units (such as price per kilogram), the project aims to identify price volatility, evaluate competitive supermarket pricing strategies, and uncover localized consumer cost trends.\n\nVisually, the presentation is designed around an ocean-inspired color palette, utilizing light blues, deep aquas, and clean tones to give the slides a fresh look that aligns seamlessly with the project. The final deliverables include a structured dataset, comparative data visualizations, and a concise analytical report detailing key market insights for consumers and retail stakeholders.',
       popoutImages: [
         '/works/popouts/CatchofTheDay/34.png',
         '/works/popouts/CatchofTheDay/35.png',
@@ -197,7 +211,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/globalfood.png', 
       aspectRatio: 'aspect-video', 
-      description: 'An impactful presentation addressing global food security, using compelling infographics and structured layouts to convey critical information.',
+      externalLink: 'https://canva.link/vnnn3ea3k20d7hc',
+      description: 'This academic presentation examines the critical challenges, current trends, and systemic drivers of global food insecurity. It provides a comprehensive analysis of the four pillars of food security availability, access, utilization, and stability—while evaluating the modern impacts of climate change, geopolitical conflict, and economic inflation on vulnerable populations.\n\nTo emphasize the global importance of this study and maintain academic rigor, the slide presentation explicitly incorporates the official color palette of the United Nations Sustainable Development Goals (SDGs), visually aligning the research directly with SDG 2 (Zero Hunger) and its interconnected targets. The project concludes with data-driven projections and a review of technological innovations in precision agriculture that offer pathways toward a more resilient global food system.',
       popoutImages: [
         '/works/popouts/GlobalFoodSec/48.png',
         '/works/popouts/GlobalFoodSec/49.png',
@@ -212,7 +227,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/huzons.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A professional and sleek presentation design for Huzons, outlining corporate strategies with clarity and modern minimalism.',
+      externalLink: 'https://canva.link/n8yezxjjoqvxsfd',
+      description: 'This operational case study observes and evaluates the end-to-end business operations of Huzon’s Candle Business, a holistic psychological wellness hub in Iloilo. The project focuses on mapping their unique "candle-making therapy" production model, analyzing how artisanal manufacturing processes (such as precision temperature control, scent loading, and curing) blend with community mental wellness workshops. The final report assesses their raw material supply chain, quality assurance standards, inventory bottlenecks, and eco-friendly distribution logistics.\n\nVisually, the presentation is anchored in a high-end, editorial wellness aesthetic, utilizing a bone-white backdrop, earthy taupe accents, and deep charcoal typography to evoke a sense of premium, structured calm. The final deliverables include automated capacity models, comparative manufacturing datasets, and a polished strategic audit designed to demonstrate operational excellence to retail stakeholders and recruiters.',
       popoutImages: [
         '/works/popouts/Huzons/20.png',
         '/works/popouts/Huzons/21.png',
@@ -227,7 +243,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/kommute.png', 
       aspectRatio: 'aspect-video', 
-      description: 'An intuitive pitch deck for Kommute, illustrating a seamless transportation solution through engaging visuals and user-centric design.',
+      externalLink: 'https://canva.link/4xwuge615gxud1i',
+      description: 'Kommute is a mobile application proposal designed to improve the daily transit experience for Ilonggo commuters through real-time jeepney tracking. The app allows users to monitor jeepney locations, estimate arrival times, and view route maps, bringing modern digital convenience to Iloilo City\'s traditional transport system.\n\nThe project identity utilizes a strategic color palette of orange, navy blue, and white. Orange signifies the vibrant energy of Iloilo\'s streets and provides high visibility. Navy Blue establishes professional trust and technological reliability. White ensures a clean, high-contrast user interface for effortless readability during daily commutes.',
       popoutImages: [
         '/works/popouts/Kommute/27.png',
         '/works/popouts/Kommute/28.png',
@@ -242,7 +259,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/mpowered.png', 
       aspectRatio: 'aspect-video', 
-      description: 'An empowering presentation layout for Mpowered, utilizing bold typography and inspiring imagery to effectively deliver their core message.',
+      externalLink: 'https://canva.link/ciueyvrl3lfvter',
+      description: 'MPowered is a student-led seminar designed as a course project for Events Management. Created by and for future marketing professionals, this event aims to bridge the gap between academic theory and real-world industry practice.\nAs the Marketing Head for this project, I am leading the end-to-end strategic planning, promotional campaigns, and brand positioning for the seminar. The event features an elite lineup of guest speakers who are seasoned industry experts. Through "MPowered," our team manages real-world corporate event logistics, budgeting, and speaker relations, while the marketing committee drives audience acquisition, digital engagement, and public relations to empower the next generation of marketers.\n\nVisually, the presentation is anchored in a corporate tech-forward aesthetic, utilizing a striking teal and deep aqua color palette accented with sharp gold geometric ribbons to project an aura of professional excellence and leadership. The final deliverables integrate clean corporate typography, high-contrast speaker spotlights, and a structured marketing blueprint designed to demonstrate public relations mastery and corporate readiness to prospective employers and industry stakeholders.',
       popoutImages: [
         '/works/popouts/Mpowered/55.png',
         '/works/popouts/Mpowered/56.png',
@@ -256,7 +274,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/nexu.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A cutting-edge presentation for Nexu, featuring futuristic design elements and sharp layouts to present technological innovations.',
+      externalLink: 'https://canva.link/2h4hkdpkmq7xs07',
+      description: 'Nexu is an NFC and QR-enabled smart business card ecosystem designed to streamline professional networking by replacing paper cards with instant, digital contact sharing.\nThis presentation was specifically developed and optimized for a business plan pitching competition to demonstrate the product\'s market viability, revenue model, and scalability to panel judges.\n\nThe visual identity leverages a premium, tech-forward color strategy Black and White serve as the primary colors to establish a sophisticated, minimalist, and highly professional foundation. Vibrant Blue and Pink act as sharp accent colors to inject modern tech energy, highlight critical financial metrics, and maintain audience engagement.',
       popoutImages: [
         '/works/popouts/Nexu/6.png',
         '/works/popouts/Nexu/7.png',
@@ -271,7 +290,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/sunlife.png', 
       aspectRatio: 'aspect-video', 
-      description: 'A well-structured corporate presentation for Sunlife, focusing on financial concepts with clear, professional, and trustworthy visual aids.',
+      externalLink: 'https://canva.link/kp0c5ohfxcl0kx1',
+      description: 'This presentation explores accessible healthcare by breaking down one of Sun Life\'s basic insurance plans into simple, practical terms. It demonstrates how individuals can secure their health and wellness effectively without financial strain.\n\nVisually, the deck strictly incorporates Sun Life\'s official brand colors to reinforce credibility and trust. Vibrant Yellow reflects optimism and a bright future, aligning with the "sun" theme. Deep Blue provides a professional, stable contrast that represents financial security and corporate reliability.',
       popoutImages: [
         '/works/popouts/Sunlife/13.png',
         '/works/popouts/Sunlife/14.png',
@@ -286,7 +306,8 @@ export default function WorksPage() {
       category: 'Presentations', 
       image: '/works/thumbnails/tiktok.png', 
       aspectRatio: 'aspect-video',
-      description: "A comprehensive presentation focusing on TikTok's platform strategies. The design utilizes the brand's signature aesthetic to deliver insights effectively.",
+      externalLink: 'https://canva.link/vridhwunfghwzzh',
+      description: 'This research presentation investigates the influence of TikTok product reviews on the purchasing decisions of college students in Iloilo City. To maintain thematic consistency and visual cohesion, I specifically incorporated TikTok’s signature brand colors into the design, aligning the slide aesthetics directly with the digital platform being studied.\nThe project analyzes key factors such as influencer credibility, expertise, and relatability to provide localized data and marketing insights specific to the Iloilo youth demographic. The presentation details the study\'s methodology, data-driven findings, and their implications for the future of creator-led marketing.',
       popoutImages: [
         '/works/popouts/tiktok/41.png',
         '/works/popouts/tiktok/42.png',
@@ -328,10 +349,10 @@ export default function WorksPage() {
           transition={{ duration: 0.8 }}
           className="mb-12 md:mb-16 pt-8"
         >
-          <h2 className="font-heading font-bold text-2xl md:text-[34px] text-brand-burgundy mb-2 -ml-1 md:-ml-2">Do you want the</h2>
-          <h1 className="font-title text-[5.5rem] md:text-[9rem] text-brand-burgundy leading-[0.75] mb-4 -ml-2 md:-ml-4">Portfolio<br/>Tour</h1>
+          <h2 className="font-heading font-bold text-2xl md:text-[34px] text-brand-burgundy mb-6 -ml-1 md:-ml-2">Do you want the</h2>
+          <h1 className="font-title text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] whitespace-nowrap text-brand-burgundy leading-[0.85] mb-10 -ml-1 md:-ml-2">Portfolio Tour<span className="font-heading italic">?</span></h1>
           <p className="font-subheading italic font-light text-xl md:text-2xl opacity-80 max-w-2xl text-brand-burgundy">
-            A comprehensive look at my design journey, exploring brand identities, digital experiences, and visual storytelling.
+            Step inside and take a look around at my presentation designs, social media assets, and many more.
           </p>
         </motion.div>
 
