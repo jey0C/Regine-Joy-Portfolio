@@ -13,7 +13,7 @@ export default function PlaylistPage() {
       />
       
       {/* Left Text */}
-      <div className="absolute left-6 md:left-20 lg:left-32 top-[30%] md:top-[40%] -translate-y-1/2 flex flex-col text-[#fbdfe8] z-20">
+      <div className="absolute left-4 sm:left-6 md:left-20 lg:left-32 top-[20%] sm:top-[25%] md:top-[40%] -translate-y-1/2 flex flex-col text-[#fbdfe8] z-20 scale-75 sm:scale-100 origin-left">
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
