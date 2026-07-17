@@ -350,7 +350,7 @@ export default function WorksPage() {
           className="mb-12 md:mb-16 pt-8"
         >
           <h2 className="font-heading font-bold text-2xl md:text-[34px] text-brand-burgundy mb-6 -ml-1 md:-ml-2">Do you want the</h2>
-          <h1 className="font-title text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] whitespace-nowrap text-brand-burgundy leading-[0.85] mb-10 -ml-1 md:-ml-2">Portfolio Tour<span className="font-heading italic">?</span></h1>
+          <h1 className="font-title text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] text-brand-burgundy leading-[0.85] mb-10 -ml-1 md:-ml-2">Portfolio Tour<span className="font-heading italic">?</span></h1>
           <p className="font-subheading italic font-light text-xl md:text-2xl opacity-80 max-w-2xl text-brand-burgundy">
             Step inside and take a look around at my presentation designs, social media assets, and many more.
           </p>

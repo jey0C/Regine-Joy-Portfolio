@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="w-full max-w-[1500px] mx-auto px-6 lg:pl-12 lg:pr-0 flex flex-col lg:flex-row items-center justify-between relative z-10 gap-10">
           
           {/* Left Side: Text */}
-          <div className="flex flex-col items-center lg:items-start w-full lg:w-[45%] shrink-0 lg:-ml-10 xl:-ml-20 -mt-10 lg:-mt-20">
+          <div className="flex flex-col items-center lg:items-start w-full lg:w-[45%] shrink-0 -mt-10 lg:-mt-20">
              
              <motion.div
                initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <img 
                   src="/images/passport.png" 
                   alt="Regine Moises Passport" 
-                  className="w-[500px] lg:w-[650px] xl:w-[750px] max-w-none h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] transition-all duration-500 cursor-pointer" 
+                  className="w-full max-w-[500px] lg:max-w-[650px] xl:max-w-[750px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] transition-all duration-500 cursor-pointer" 
                 />
              </motion.div>
           </div>
