@@ -13,12 +13,12 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col w-full bg-[#e8cdcf]">
       {/* First Section */}
-      <div className="pt-24 pb-12 w-full min-h-[100vh] flex flex-col items-center justify-center bg-[#f9e7e9] relative overflow-hidden shrink-0">
+      <div className="pt-32 pb-12 w-full min-h-[100vh] flex flex-col items-center bg-[#f9e7e9] relative overflow-hidden shrink-0">
         
-        <div className="w-full max-w-[1500px] mx-auto px-6 lg:pl-12 lg:pr-0 flex flex-col lg:flex-row items-center justify-between relative z-10 gap-10">
+        <div className="w-full max-w-[1500px] mx-auto mt-8 lg:mt-12 mb-auto px-6 lg:pl-12 lg:pr-0 flex flex-col lg:flex-row items-center justify-between relative z-10 gap-10 lg:gap-16">
           
           {/* Left Side: Text */}
-          <div className="flex flex-col items-center lg:items-start w-full lg:w-[45%] shrink-0 -mt-10 lg:-mt-20">
+          <div className="flex flex-col items-center lg:items-start w-full lg:w-[45%] shrink-0 mt-16 md:mt-20 lg:-mt-10">
              
              <motion.div
                initial={{ opacity: 0, y: 20 }}
@@ -186,11 +186,11 @@ export default function AboutPage() {
                 />
                 
                 {/* Popout Text */}
-                <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-2xl shadow-xl border border-[#f9e7e9] opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300 pointer-events-none whitespace-nowrap z-40" style={{ transform: "translate(-50%, 0) rotate(-10deg)" }}>
+                <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-2xl shadow-xl border border-[#f9e7e9] opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300 pointer-events-none whitespace-nowrap z-40" style={{ transform: "translate(-50%, 0) rotate(-10deg)" }}>
                   <p className="font-sans text-sm md:text-base font-medium text-[#6b1b26]">
                     1 Caramel Macchiato for Regine
                   </p>
-                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white/95 border-b border-r border-[#f9e7e9] transform rotate-45"></div>
+                  <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white/95 border-t border-l border-[#f9e7e9] transform rotate-45"></div>
                 </div>
               </motion.div>
 

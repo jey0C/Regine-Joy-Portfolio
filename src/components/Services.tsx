@@ -147,9 +147,9 @@ export default function Services() {
                   </svg>
                   
                   {/* Foreground Content */}
-                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-8 sm:px-10 md:px-12 py-4 sm:py-6 text-center text-[#2b0402]">
+                  <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-center text-[#2b0402]">
                      <div className="absolute inset-0 bg-[#2b0402]/5 opacity-40 mix-blend-multiply pointer-events-none rounded-[20px]" />
-                     <p className="font-sans text-[13px] sm:text-[15px] md:text-base leading-snug sm:leading-relaxed opacity-90 font-medium line-clamp-4">
+                     <p className="font-sans text-[12px] sm:text-[14px] md:text-[15px] leading-tight sm:leading-snug md:leading-relaxed opacity-90 font-medium">
                        {service.description}
                      </p>
                   </div>

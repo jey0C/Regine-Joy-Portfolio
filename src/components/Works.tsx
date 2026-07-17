@@ -14,23 +14,29 @@ export default function Works() {
     AutoScroll({ playOnInit: true, stopOnInteraction: false, speed: 1.5 })
   ]);
 
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
-  const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
-
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-
-  const onSelect = useCallback((emblaApi: any) => {
-    setPrevBtnDisabled(!emblaApi.canScrollPrev());
-    setNextBtnDisabled(!emblaApi.canScrollNext());
-  }, []);
-
-  useEffect(() => {
+  const scrollPrev = useCallback(() => {
     if (!emblaApi) return;
-    onSelect(emblaApi);
-    emblaApi.on('reInit', onSelect);
-    emblaApi.on('select', onSelect);
-  }, [emblaApi, onSelect]);
+    const autoScroll = emblaApi.plugins().autoScroll;
+    if (autoScroll) {
+      autoScroll.stop();
+      emblaApi.scrollPrev();
+      setTimeout(() => autoScroll.play(), 500);
+    } else {
+      emblaApi.scrollPrev();
+    }
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return;
+    const autoScroll = emblaApi.plugins().autoScroll;
+    if (autoScroll) {
+      autoScroll.stop();
+      emblaApi.scrollNext();
+      setTimeout(() => autoScroll.play(), 500);
+    } else {
+      emblaApi.scrollNext();
+    }
+  }, [emblaApi]);
 
   const projects = [
     { id: 1, title: 'Nexu', category: 'Presentations', image: '/works/thumbnails/nexu.png' },
@@ -52,15 +58,13 @@ export default function Works() {
             <div className="flex gap-2">
               <button
                 onClick={scrollPrev}
-                disabled={prevBtnDisabled}
-                className="w-10 h-10 rounded-full border border-brand-pink/50 flex items-center justify-center text-brand-pink disabled:opacity-30 hover:bg-brand-pink hover:text-brand-burgundy transition-all"
+                className="w-10 h-10 rounded-full border border-brand-pink/50 flex items-center justify-center text-brand-pink hover:bg-brand-pink hover:text-brand-burgundy transition-all"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={scrollNext}
-                disabled={nextBtnDisabled}
-                className="w-10 h-10 rounded-full border border-brand-pink/50 flex items-center justify-center text-brand-pink disabled:opacity-30 hover:bg-brand-pink hover:text-brand-burgundy transition-all"
+                className="w-10 h-10 rounded-full border border-brand-pink/50 flex items-center justify-center text-brand-pink hover:bg-brand-pink hover:text-brand-burgundy transition-all"
               >
                 <ChevronRight size={20} />
               </button>
