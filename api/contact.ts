@@ -12,7 +12,7 @@ export default async function handler(req: any, res: any) {
   }
 
   const user = process.env.EMAIL_USER;
-  const pass = process.env.EMAIL_PASS;
+  const pass = process.env.EMAIL_PASS?.replace(/\s+/g, '');
 
   if (!user || !pass) {
     console.warn("EMAIL_USER or EMAIL_PASS is missing. Simulating success.");
@@ -21,7 +21,9 @@ export default async function handler(req: any, res: any) {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
       auth: {
         user,
         pass,
@@ -30,14 +32,15 @@ export default async function handler(req: any, res: any) {
 
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
+      replyTo: email,
       to: "work.reginemoises@gmail.com",
       subject: `Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
     res.status(200).json({ success: true });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error sending email:", error);
-    res.status(500).json({ error: "Failed to send email" });
+    res.status(500).json({ error: "Failed to send email", details: error.message });
   }
 }

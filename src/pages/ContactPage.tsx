@@ -106,7 +106,8 @@ export default function ContactPage() {
                           alert("Message Sent!");
                           setFormData({ name: '', email: '', message: '' });
                         } else {
-                          alert("Failed to send message. Please try again later.");
+                          const errData = await response.json().catch(()=>({}));
+                          alert(`Failed to send message: ${errData.details || errData.error || "Please try again later."}`);
                         }
                       } catch (error) {
                         console.error("Error submitting form:", error);

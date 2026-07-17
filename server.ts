@@ -21,7 +21,7 @@ async function startServer() {
 
     // Lazy initialization of transporter so the app doesn't crash if env vars are missing
     const user = process.env.EMAIL_USER;
-    const pass = process.env.EMAIL_PASS;
+    const pass = process.env.EMAIL_PASS?.replace(/\s+/g, '');
 
     if (!user || !pass) {
       console.warn("EMAIL_USER or EMAIL_PASS is missing. Email will not be sent, but simulating success.");
@@ -31,7 +31,9 @@ async function startServer() {
 
     try {
       const transporter = nodemailer.createTransport({
-        service: 'gmail', // You can use other services or host/port configuration
+        host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
         auth: {
           user,
           pass,
@@ -48,7 +50,7 @@ async function startServer() {
       res.status(200).json({ success: true });
     } catch (error) {
       console.error("Error sending email:", error);
-      res.status(500).json({ error: "Failed to send email" });
+      res.status(500).json({ error: "Failed to send email", details: error.message });
     }
   });
 
